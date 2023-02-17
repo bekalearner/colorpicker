@@ -1,0 +1,67 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   height: 100vh;
+   display: flex;
+   font-family: 'Robot', sans-serif;
+}
+
+.col {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.col h2 {
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   font-weight: 500;
+   padding: 10px;
+   color: #fff;
+   border-radius: 10px;
+   transition: all 0.3s;
+}
+
+.col h2:hover {
+   background: rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+}
+
+.col p{
+   content: 'Color copied';
+   font-size: 14px;
+   padding: 10px 0;
+   display: none;
+   transition: all 0.3s;
+}
+
+.hidden{
+   display: block;
+}
+
+.col button {
+   outline: none;
+   padding: 10px;
+   border-radius: 10px;
+   border: none;
+   background: transparent;
+   font-size: 1.5rem;
+   color: #fff;
+   transition: all 0.3s;
+}
+
+.col button:hover {
+   background: rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+}
+
+.locked {
+   color:rgb(220, 60, 60)
+}
